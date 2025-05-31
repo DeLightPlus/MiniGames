@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import type { Game } from "@/lib/games-data";
 
@@ -6,13 +6,13 @@ export default function GameCard({ game }: { game: Game }) {
   return (
     <div className="group relative overflow-hidden rounded-xl bg-zinc-900 transition-all hover:bg-zinc-800">
       <div className="flex items-center gap-4 p-4">
-        <div className="relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-lg">
-          <Image
+        <div className="relative h-32 w-32 flex-shrink-0 overflow-hidden rounded-lg bg-black">
+          {/* <Image
             src={game.thumbnail}
             alt={game.name}
             fill
             className="object-cover transition-transform group-hover:scale-110"
-          />
+          /> */}
         </div>
         
         <div className="flex flex-col">

@@ -1,4 +1,4 @@
-import { games, getSinglePlayerGames, getMultiplayerGames } from "@/lib/games-data";
+import { getSinglePlayerGames, getMultiplayerGames } from "@/lib/games-data";
 import GameCard from "@/components/GameCard";
 
 export default function Home() {
