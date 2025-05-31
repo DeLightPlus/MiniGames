@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="../styles/shared.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="app-header">
+            <button class="icon-btn back-btn" onclick="window.history.back()" title="Back">
+                &#8592;
+                <span class="tooltip">Back</span>
+            </button>
+            <span class="app-title">
+                <span class="game-icon">🐦</span>
+                <span class="game-name">Flappy Bird</span>
+                <span class="game-info">Score: <span id="score">0</span></span>
+            </span>
+        </header>
+
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="gameState" class="game-state">
+            <h2>Get Ready!</h2>
+            <p>Click or press Space to start</p>
+            <p class="high-score">High Score: <span id="highScore">0</span></p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

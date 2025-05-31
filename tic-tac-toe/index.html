@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="../styles/shared.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="app-header">
+            <button class="icon-btn back-btn" onclick="window.history.back()" title="Back">
+                &#8592;
+                <span class="tooltip">Back</span>
+            </button>
+            <span class="app-title">
+                <span class="game-icon">⭕</span>
+                <span class="game-name">Tic Tac Toe</span>
+                <button class="icon-btn reset-btn" id="resetBtn" title="Reset Game">
+                    🔄
+                    <span class="tooltip">Reset</span>
+                </button>
+            </span>
+        </header>
+
+        <div id="board" class="board"></div>
+        
+        <div class="game-info">
+            <p id="status">X's turn</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

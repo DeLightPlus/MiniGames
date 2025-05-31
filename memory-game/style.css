@@ -1,0 +1,84 @@
+
+.memory_game
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    width:350px;
+    height: 420px;
+    gap: 2px;
+
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.card
+{
+    position: relative;
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
+    text-align: center;
+    align-items: center;   
+    width: 86px;
+    height: 100px;      
+    transform: rotateY(360deg);
+    transition: 0.3s;
+}
+
+.card:hover 
+{
+    transform: translateY(0.05rem) scale(1.05); 
+    transition: transform 600ms ease-in-out;
+    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); */
+    box-shadow: 0 8px 32px rgba(16, 185, 129, 0.473);
+    border-color: #10b981;
+}
+
+.card.flip_card
+{
+    transform: rotateY(0deg) ;
+}
+
+.card::after
+{
+    content: '👽';     
+    padding: 8px;
+    font-size: 56px;
+    position: absolute;
+    inset: 0; 
+    background: linear-gradient(to right, #222222cc,#0000008c,#222222cc);
+    border: #10b98141 solid 2px;
+    transition: 0.25s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.flip_card:after, 
+.match_card:after
+{
+    transform: rotateY(180deg);
+}
+
+.button
+{
+    padding: 5px;
+    font-size:medium;
+
+    color: lightgray;
+    background: #313131;
+    border: #000 solid 2px;
+}
+
+.button:hover 
+{
+    transform: translateY(0.05rem) scale(1.05); 
+    transition: transform 600ms ease-in-out;
+
+    color: #313131;
+    background: lightgray;
+    border: #000 solid 2px;
+}

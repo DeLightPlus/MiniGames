@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/shared.css">
+</head>
+
+<body>
+    <header class="app-header">
+        <div class="nav-section">
+            <button class="icon-btn back-btn" onclick="window.history.back()" title="Back">
+                &#8592;
+            </button>
+            <span class="app-title">DeLightPlus_Mini-Games</span>
+            <div class="header-actions">
+                <button class="icon-btn theme-toggle" id="themeToggleBtn" title="Toggle Theme">
+                    🌓
+                </button>
+                <button class="icon-btn settings-btn" title="Settings">
+                    ⚙️
+                </button>
+            </div>
+        </div>
+
+        <div class="game-title-row">
+            <span class="game-name">Snake Game</span>
+            <span class="game-info">
+                <span class="level">Level: <span id="level">1</span></span> |
+                <span class="score">Score: <span id="score"></span></span>
+            </span>
+            <button class="icon-btn play-btn" id="startBtn" title="start Game">
+                <!-- ↻<span class="tooltip">Restart</span> -->
+                ▶<span class="tooltip">Play</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <!-- <div class="game-info">
+            <p>Score: <span id="score">0</span></p>           
+        </div> -->
+    </main>
+    <div class="snake-mobile-controls">
+        <div class="snake-controls-row">
+            <button id="upBtn" aria-label="Up">⬆️</button>
+        </div>
+        <div class="snake-controls-row">
+            <button id="leftBtn" aria-label="Left">⬅️</button>
+            <button id="downBtn" aria-label="Down">⬇️</button>
+            <button id="rightBtn" aria-label="Right">➡️</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>

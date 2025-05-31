@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="dark-theme">
+    <header class="transparent">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><i class="fas fa-bezier-curve"></i> UI Portfolio</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li class="dropdown">
+              <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
+              <div class="dropdown-content">
+                <a href="#">Portfolio</a>
+                <a href="#">Blog</a>
+                <a href="#">Team</a>
+              </div>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-buttons">
+          <a href="#" class="hire-btn">Hire Me</a>
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle dark/light mode"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h3>Hi, I'm <span>John Watson</span></h3>
+            <div class="typing-container">
+              <span id="typing-text" class="typing"></span>
+              <!-- <span class="typing-cursor">|</span> -->
+            </div>
+            <p>
+              I love Graphic design and Photography and have been working on my
+              portfolio since 2016. I Can give your business a new Creative
+              start right away!
+            </p>
+            <div class="hero-buttons">
+              <a href="#" class="hire-btn">Hire Me</a>
+              <a href="#" class="portfolio-btn">My Portfolio</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="/images/banner.png" alt="John Watson" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="biography">
+      <div class="container">
+        <div class="bio-image">
+          <img src="/images/about.jpg" alt="John Watson Black and White" />
+        </div>
+        <div class="bio-content">
+          <span class="section-subtitle">MY BIOGRAPHY</span>
+          <h2>A Lead UI Designer & Web Developer Based In UK</h2>
+          <p>
+            I love Graphic design and Photography and have been working on my
+            portfolio since 2016. I Can give your business a new Creative start
+            right away! Contact me and we will discuss your projects!
+            <hr/>
+
+            <div class="grid-container">
+                <div><strong>Name:</strong> <span>John Watson</span></div>
+                <div><strong>From:</strong> <span>UK, London</span></div>
+                <div><strong>Email:</strong> <span>example@email.com</span></div>
+                <div><strong>Phone:</strong> <span>+21 234 567 8901</span></div>
+            </div>
+            
+            <style>
+               
+
+            </style>
+            
+          </p>  
+          
+          <a href="#" class="hire-btn">Hire Me</a>
+          <a href="#" class="download-btn">Download CV</a>
+        </div>        
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">MY SERVICES</span>
+          <h2>Services I Offer</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>
+              Creating intuitive and engaging user interfaces that enhance user
+              experience.
+            </p>
+            <a href="#" class="learn-more"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>
+              Building responsive and functional websites using the latest
+              technologies.
+            </p>
+            <a href="#" class="learn-more"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>App Development</h3>
+            <p>
+              Developing cross-platform mobile applications with seamless
+              functionality.
+            </p>
+            <a href="#" class="learn-more"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+            <h3>Photography</h3>
+            <p>
+              Capturing high-quality images for various commercial and personal
+              projects.
+            </p>
+            <a href="#" class="learn-more"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section with Progress Bars -->
+    <section class="skills">
+      <div class="container">
+        <div class="skills-content">
+          <div class="skills-image">
+            <img src="/images/skills.jpg" alt="Skills Showcase" />
+          </div>
+          <div class="skills-info">
+            <span class="section-subtitle">MY SKILLS</span>
+            <h2>My Featured Skills</h2>
+            <p>
+              I Specialize in Branding and Strategy, and am passionate about
+              creating Awesome Portfolio work. And I always ready to impress the
+              audience with my Creativity.
+            </p>
+
+            <div class="skill-bars">
+              <div class="skill-item">
+                <div class="skill-name">UI/UX Design</div>
+                <div class="skill-progress">
+                  <div class="progress-bar" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">Ideas & Technology</div>
+                <div class="skill-progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">Branding Design</div>
+                <div class="skill-progress">
+                  <div class="progress-bar" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">Responsive Web Design</div>
+                <div class="skill-progress">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Categories Section -->
+    <section class="work-categories">
+      <div class="container">
+        <div class="categories-grid">
+          <div class="category-item">
+            <div class="category-title">
+            <div class="category-icon">
+              <i class="fab fa-wordpress"></i>
+            </div>            
+            <h3>Web Development</h3>
+        </div>
+            <p>
+              Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+            </p>
+          </div>
+
+          <div class="category-item">
+            <div class="category-title">
+            <div class="category-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3>Design Trends</h3></div>
+            <p>
+              Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+            </p>
+          </div>
+          <div class="category-item">
+            <div class="category-title">
+            <div class="category-icon">
+              <i class="fas fa-chart-line"></i>            
+            </div>
+            <h3>Research & Analysis</h3>
+        </div>
+            <p>
+              Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+            </p>
+          </div>
+          <div class="category-item">
+            <div class="category-title">
+            <div class="category-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>Customer support</h3></div>
+            <p>
+              Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+            </p>
+          </div>
+          <div class="category-item">
+            <div class="category-title">
+              <div class="category-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3>Responsive design</h3>
+            </div>
+            <p>
+              Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+            </p>
+          </div>
+          <div class="category-item">
+            <div class="category-title">
+              <div class="category-icon">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <h3>PSD Design</h3>
+            </div>
+
+            <p>
+              Lorem ipsum viverra libero set. Pellen ut justo, in ligula at.
+            </p>
+          </div>
+        </div>
+        <div class="categories-image">
+          <img src="/images/banner.png" alt="John Watson" />
+        </div>
+      </div>      
+    </section>
+
+    <div class="bio-details">
+        <div class="bio-detail">
+            <h3>100+</h3>
+            <p>Projects Finished</p>
+        </div>
+
+        <div class="bio-detail">
+          <h3>7+</h3>
+          <p>Years of Experience</p>
+        </div>
+        <div class="bio-detail">
+          <h3>250+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="bio-detail">
+          <h3>58</h3>
+          <p>Happy Clients</p>
+        </div>
+    </div>
+
+    <section class="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">MY WORK</span>
+          <h2>Recent Projects</h2>
+        </div>
+        <div class="portfolio-filter">
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">UI Design</button>
+          <button class="filter-btn">Web Development</button>
+          <button class="filter-btn">Photography</button>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img src="https://img.freepik.com/premium-photo/parcel-paper-cartons-with-shopping-cart-logo-trolley-laptop-keyboard_9635-3540.jpg?w=996" alt="Project 1" />
+            <div class="portfolio-overlay">
+              <h3>E-commerce Website</h3>
+              <p>Web Development</p>
+              <a href="#" class="view-project">View Project</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="https://img.freepik.com/premium-psd/mobile-app-screen-mockup_772836-937.jpg?w=740" alt="Project 2" />
+            <div class="portfolio-overlay">
+              <h3>Mobile App UI</h3>
+              <p>UI Design</p>
+              <a href="#" class="view-project">View Project</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="https://img.freepik.com/premium-photo/3d-background-christmas-season-celebration_984354-9740.jpg?w=900" alt="Project 3" />
+            <div class="portfolio-overlay">
+              <h3>Product Photography</h3>
+              <p>Photography</p>
+              <a href="#" class="view-project">View Project</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="https://img.freepik.com/premium-photo/interface-website-design_1153109-1123.jpg?w=740" alt="Project 4" />
+            <div class="portfolio-overlay">
+              <h3>Dashboard Design</h3>
+              <p>UI Design</p>
+              <a href="#" class="view-project">View Project</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="https://img.freepik.com/premium-psd/web-pages-mock-up_1307-360.jpg?w=740" alt="Project 5" />
+            <div class="portfolio-overlay">
+              <h3>Corporate Website</h3>
+              <p>Web Development</p>
+              <a href="#" class="view-project">View Project</a>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="https://img.freepik.com/premium-photo/young-handsome-african-man-holding-old-camera-blue-wall_926199-3036774.jpg?w=740" alt="Project 6" />
+            <div class="portfolio-overlay">
+              <h3>Portrait Photography</h3>
+              <p>Photography</p>
+              <a href="#" class="view-project">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rest of the HTML remains the same -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">TESTIMONIALS</span>
+          <h2>What Clients Say</h2>
+        </div>
+        <div class="testimonial-slider">
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>
+                "John delivered an exceptional UI design for our e-commerce
+                platform. His attention to detail and creative approach
+                significantly improved our user experience."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img src="https://img.freepik.com/premium-photo/old-colored-photograph-black-woman-from-early-1900s_731930-104091.jpg?w=826" alt="Client 1" />
+              <div class="author-info">
+                <h4>Sarah Johnson</h4>
+                <p>CEO, TechStart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <span class="section-subtitle">CONTACT ME</span>
+            <h2>Get In Touch</h2>
+            <p>
+              Feel free to reach out if you want to collaborate with me, or
+              simply have a chat.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>john@uiportfolio.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+44 123 456 7890</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Location</h4>
+                  <p>London, United Kingdom</p>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form>
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Subject" required />
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="copyright">
+            <p>&copy; 2023 UI Portfolio. All Rights Reserved.</p>
+          </div>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Simple JavaScript for theme toggle, typing effect, and other functionality -->
+    <script>
+      // Wait for the document to be fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Header scroll effect
+        const header = document.querySelector("header");
+
+        // Function to handle scroll
+        function handleScroll() {
+          if (window.scrollY > 50) {
+            header.classList.remove("transparent");
+            header.classList.add("scrolled");
+          } else {
+            header.classList.add("transparent");
+            header.classList.remove("scrolled");
+          }
+        }
+
+        // Initial call to set correct state
+        handleScroll();
+
+        // Add scroll event listener
+        window.addEventListener("scroll", handleScroll);
+
+        // Theme toggle functionality
+        const themeToggle = document.getElementById("theme-toggle");
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector("i");
+
+        // Check if there's a saved theme preference in localStorage
+        const savedTheme = localStorage.getItem("theme");
+
+        // Apply saved theme if it exists
+        if (savedTheme) {
+          body.className = savedTheme;
+          updateThemeIcon(savedTheme);
+        }
+
+        // Toggle theme when the button is clicked
+        themeToggle.addEventListener("click", function () {
+          // Check current theme
+          if (body.classList.contains("dark-theme")) {
+            // Switch to light theme
+            body.classList.remove("dark-theme");
+            body.classList.add("light-theme");
+            localStorage.setItem("theme", "light-theme");
+            themeIcon.className = "fas fa-moon";
+          } else {
+            // Switch to dark theme
+            body.classList.remove("light-theme");
+            body.classList.add("dark-theme");
+            localStorage.setItem("theme", "dark-theme");
+            themeIcon.className = "fas fa-sun";
+          }
+        });
+
+        // Function to update the theme icon based on current theme
+        function updateThemeIcon(theme) {
+          if (theme === "light-theme") {
+            themeIcon.className = "fas fa-moon";
+          } else {
+            themeIcon.className = "fas fa-sun";
+          }
+        }
+
+        // Dropdown menu functionality
+        const dropdown = document.querySelector(".dropdown");
+        dropdown.addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+
+        // Back to top button functionality
+        const backToTopButton = document.querySelector(".back-to-top");
+
+        // Show/hide back to top button based on scroll position
+        window.addEventListener("scroll", function () {
+          if (window.pageYOffset > 300) {
+            backToTopButton.classList.add("show");
+          } else {
+            backToTopButton.classList.remove("show");
+          }
+        });
+
+        // Scroll to top when back to top button is clicked
+        backToTopButton.addEventListener("click", function (e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Typing effect
+      const typingText = document.getElementById("typing-text");
+      const phrases = [
+        "Freelancer",
+        "Web Designer",
+        "Web Developer",
+        "Photographer",
+      ];
+      let phraseIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      let typingSpeed = 100;
+
+      function typeEffect() {
+        const currentPhrase = phrases[phraseIndex];
+
+        if (isDeleting) {
+          // Deleting text
+          typingText.textContent = currentPhrase.substring(0, charIndex - 1);
+          charIndex--;
+          typingSpeed = 50; // Faster when deleting
+        } else {
+          // Typing text
+          typingText.textContent = currentPhrase.substring(0, charIndex + 1);
+          charIndex++;
+          typingSpeed = 100; // Normal speed when typing
+        }
+
+        // If word is complete, start deleting after a pause
+        if (!isDeleting && charIndex === currentPhrase.length) {
+          isDeleting = true;
+          typingSpeed = 1000; // Pause at the end of the word
+        }
+        // If deletion is complete, move to next word
+        else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          typingSpeed = 500; // Pause before starting new word
+        }
+
+        setTimeout(typeEffect, typingSpeed);
+      }
+
+      // Start the typing effect
+      setTimeout(typeEffect, 1000);
+    </script>
+  </body>
+</html>
